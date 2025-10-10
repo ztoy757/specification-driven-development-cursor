@@ -37,6 +37,9 @@ npm run build
 
 # テスト実行
 npm run test
+
+# 手動デプロイ（GitHub Pages）
+npm run deploy
 ```
 
 ## ✨ 機能
@@ -71,6 +74,27 @@ todo-app/
 ├── .cursor_workflow/   # 設計・実装計画書
 └── README.md
 ```
+
+## 🚀 デプロイ
+
+### GitHub Pages（自動デプロイ）
+
+このプロジェクトはGitHub Actionsを使用した自動デプロイに対応しています。
+
+**初回セットアップ:**
+1. GitHubリポジトリの Settings > Pages を開く
+2. Source を "GitHub Actions" に設定
+3. `main`ブランチにプッシュすると自動的にデプロイされます
+
+デプロイ後のURL: `https://[username].github.io/sdd_cursor/`
+
+### 手動デプロイ
+
+```bash
+npm run deploy
+```
+
+このコマンドでビルドとgh-pagesブランチへのプッシュが実行されます。
 
 ## 設計ドキュメント
 

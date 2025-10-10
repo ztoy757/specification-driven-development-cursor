@@ -1,0 +1,98 @@
+{
+  "name": "Vue.js TODOアプリ開発環境",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+
+  // フォワードするポート（Viteの開発サーバー）
+  "forwardPorts": [5173],
+  // コンテナのユーザー設定
+  "remoteUser": "node"
+  
+  // // 使用するVS Code拡張機能
+  // "customizations": {
+  //   "vscode": {
+  //     "extensions": [
+  //       // Vue.js開発に必要な拡張機能
+  //       "Vue.volar",
+  //       "Vue.vscode-typescript-vue-plugin",
+        
+  //       // TypeScript開発支援
+  //       "ms-vscode.vscode-typescript-next",
+        
+  //       // Tailwind CSS支援
+  //       "bradlc.vscode-tailwindcss",
+        
+  //       // ESLint & Prettier
+  //       "esbenp.prettier-vscode",
+  //       "dbaeumer.vscode-eslint",
+        
+  //       // Git関連
+  //       "eamodio.gitlens",
+        
+  //       // 一般的な開発支援
+  //       "ms-vscode.vscode-json",
+  //       "christian-kohler.path-intellisense",
+  //       "formulahendry.auto-rename-tag",
+  //       "ms-vscode.vscode-npm-scripts",
+        
+  //       // マークダウン支援
+  //       "yzhang.markdown-all-in-one"
+  //     ],
+  //     "settings": {
+  //       // TypeScript設定
+  //       "typescript.preferences.includePackageJsonAutoImports": "auto",
+  //       "typescript.suggest.autoImports": true,
+        
+  //       // Vue.js設定
+  //       "vue.server.hybridMode": true,
+        
+  //       // Tailwind CSS設定
+  //       "tailwindCSS.includeLanguages": {
+  //         "vue": "html"
+  //       },
+  //       "tailwindCSS.experimental.classRegex": [
+  //         ["class:\\s*['\"`]([^'\"`]*)['\"`]", "['\"`]([^'\"`]*)['\"`]"]
+  //       ],
+        
+  //       // エディタ設定
+  //       "editor.formatOnSave": true,
+  //       "editor.codeActionsOnSave": {
+  //         "source.fixAll.eslint": true
+  //       },
+  //       "editor.tabSize": 2,
+  //       "editor.insertSpaces": true,
+        
+  //       // ファイル関連
+  //       "files.autoSave": "onWindowChange",
+  //       "files.trimTrailingWhitespace": true,
+  //       "files.insertFinalNewline": true,
+        
+  //       // 検索設定
+  //       "search.exclude": {
+  //         "**/node_modules": true,
+  //         "**/dist": true,
+  //         "**/.git": true
+  //       }
+  //     }
+  //   }
+  // },
+  
+  // // コンテナ作成後に実行するコマンド
+  // "postCreateCommand": "npm install",
+  
+  // // フォワードするポート（Viteの開発サーバー）
+  // "forwardPorts": [5173],
+  // "portsAttributes": {
+  //   "5173": {
+  //     "label": "Vue.js Dev Server",
+  //     "onAutoForward": "notify"
+  //   }
+  // },
+  
+  // // 機能の有効化
+  // "features": {
+  //   "ghcr.io/devcontainers/features/git:1": {},
+  //   "ghcr.io/devcontainers/features/github-cli:1": {}
+  // }
+}

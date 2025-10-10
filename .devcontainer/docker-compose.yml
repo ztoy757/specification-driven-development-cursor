@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # ソースコードをマウント
+      - ../:/workspace:cached
+    # ports:
+    #   - "5173:5173"  # Vite開発サーバー
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true  # ファイル監視の改善
+    command: sleep infinity
+    working_dir: /workspace

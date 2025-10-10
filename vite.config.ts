@@ -10,6 +10,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  server: {
+    // devcontainer用の設定
+    host: '0.0.0.0',  // コンテナ外からアクセス可能にする
+    port: 5173,       // デフォルトポート
+    strictPort: true, // ポートが使用中の場合はエラーにする
+    hmr: {
+      port: 5173      // HMRも同じポートを使用
+    }
+  },
   test: {
     environment: 'jsdom'
   }

@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/sdd_cursor/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/ztoy757.github.io/' : '/',
   plugins: [vue()],
   resolve: {
     alias: {

@@ -38,4 +38,4 @@ jobs:
       # S3へデプロイ（ファイルを同期）
       - name: Deploy to S3
         run: |
-          aws s3 sync ./punlic s3://ztoy-s3-docs-test-026777907138-ap-northeast-1-an --delete
+          aws s3 sync ./dist s3://ztoy-s3-docs-test-026777907138-ap-northeast-1-an --delete

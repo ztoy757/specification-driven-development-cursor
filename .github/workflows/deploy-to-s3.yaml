@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to s3
 
 on:
   workflow_dispatch:
@@ -38,4 +38,4 @@ jobs:
       # S3へデプロイ（ファイルを同期）
       - name: Deploy to S3
         run: |
-          aws s3 sync ./dist s3://あなたのバケット名 --delete
+          aws s3 sync ./punlic s3://ztoy-s3-docs-test-026777907138-ap-northeast-1-an --delete
